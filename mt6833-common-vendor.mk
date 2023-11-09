@@ -425,7 +425,6 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    mediatek-wfo-legacy \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     manifest_usb.mediatekv2 \
     gnss-mediatek \

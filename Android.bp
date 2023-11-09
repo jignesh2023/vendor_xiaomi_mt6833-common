@@ -4437,12 +4437,6 @@ dex_import {
 	jars: ["proprietary/system/framework/mediatek-telephony-common.jar"],
 }
 
-dex_import {
-	name: "mediatek-wfo-legacy",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-wfo-legacy.jar"],
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-mtk-gpu",
 	owner: "xiaomi",
