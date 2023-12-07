@@ -172,6 +172,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libfmjni \
+    libvsim-adaptor-client \
     arm.graphics-V1-ndk_platform \
     android.hardware.bluetooth@1.1-impl-mediatek \
     memtrack.default \
