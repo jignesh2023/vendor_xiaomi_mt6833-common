@@ -417,6 +417,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     ImsService \
+    HotwordEnrollmentOKGoogleRISCV \
+    HotwordEnrollmentXGoogleRISCV \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -425,6 +427,7 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     gnss-mediatek \
     gnss@2.1-service \
