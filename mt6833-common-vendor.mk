@@ -418,7 +418,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
-    com.android.hotwordenrollment.common.util \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -427,6 +426,7 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     gnss-mediatek \
     gnss@2.1-service \
