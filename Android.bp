@@ -22,22 +22,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvsim-adaptor-client",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/libvsim-adaptor-client.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "arm.graphics-V1-ndk_platform",
 	owner: "xiaomi",
 	strip: {
@@ -4406,17 +4390,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "ImsService",
-	owner: "xiaomi",
-	apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleRISCV",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
@@ -4440,58 +4413,78 @@ android_app_import {
 	product_specific: true,
 }
 
-dex_import {
-	name: "mediatek-common",
+android_app_import {
+	name: "ImsService",
 	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-framework",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-framework.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-base",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-ims-base.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-ims-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-extension-plugin",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-ims-extension-plugin.jar"],
-}
-
-dex_import {
-	name: "mediatek-telecom-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-telecom-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-telephony-base",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-telephony-base.jar"],
-}
-
-dex_import {
-	name: "mediatek-telephony-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-telephony-common.jar"],
+	apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-common",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-framework",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-framework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-ims-base",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-ims-base.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-ims-common",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-ims-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-ims-extension-plugin",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-telecom-common",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-telecom-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-telephony-base",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-telephony-base.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/mediatek-telephony-common.jar"],
 	system_ext_specific: true,
 }
 
