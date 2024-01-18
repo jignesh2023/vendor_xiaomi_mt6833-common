@@ -405,8 +405,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@2.0 \
-    libem_support_jni \
     libcomutils \
+    libem_support_jni \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \

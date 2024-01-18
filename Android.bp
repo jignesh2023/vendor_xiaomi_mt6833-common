@@ -4202,13 +4202,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libem_support_jni",
+	name: "libcomutils",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
+	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libem_support_jni.so"],
+			srcs: ["proprietary/system_ext/lib64/libcomutils.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4218,14 +4219,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcomutils",
+	name: "libem_support_jni",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libcomutils.so"],
+			srcs: ["proprietary/system_ext/lib64/libem_support_jni.so"],
 		},
 	},
 	compile_multilib: "64",
