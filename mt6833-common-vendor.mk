@@ -107,6 +107,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
@@ -395,11 +396,16 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.engineermode@1.0 \
+    vendor.mediatek.hardware.engineermode@1.1 \
+    vendor.mediatek.hardware.engineermode@1.2 \
+    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@2.0 \
+    libem_support_jni \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -417,6 +423,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    EngineerMode \
     ImsService \
     mediatek-common \
     mediatek-framework \
@@ -435,6 +442,7 @@ PRODUCT_PACKAGES += \
     bp_kmsetkey_ca \
     ccci_mdinit \
     ccci_rpcd \
+    em_hidl \
     fuelgauged \
     gbe \
     gsm0710muxd \
