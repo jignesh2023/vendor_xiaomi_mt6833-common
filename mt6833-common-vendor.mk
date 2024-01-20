@@ -127,7 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
-    vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/mt6833-common/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
@@ -338,6 +337,7 @@ PRODUCT_PACKAGES += \
     libmnetlink_v104 \
     libmnl \
     libmpbase \
+    libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
     libmtkcam.eventcallback \
@@ -355,6 +355,7 @@ PRODUCT_PACKAGES += \
     libmtkconfig \
     libmtkconfigutils \
     libmtkhardware_legacy \
+    libmtkmipc-ril \
     libmtknetcap \
     libmtknetutils \
     libmtkrilutils \
@@ -379,6 +380,8 @@ PRODUCT_PACKAGES += \
     libtrm \
     liburee_meta_drmkeyinstall \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    libvia-ril \
+    libviamipc-ril \
     libwifi-hal-mtk \
     libwpfa \
     libwvhidl \
