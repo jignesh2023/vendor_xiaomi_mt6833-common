@@ -302,6 +302,10 @@ PRODUCT_PACKAGES += \
     libaiawb_p1ggm \
     libaiawb_sun_model \
     libalCFR \
+    libarcsoft_dualcam_refocus_image \
+    libarcsoft_dualcam_refocus_video \
+    libarcsoft_hdr_detection \
+    libarcsoft_high_dynamic_range \
     libarcsoft_low_light_hdr \
     libcam.halsensor.hwintegration \
     libcamalgo.3dnr \
