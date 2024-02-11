@@ -385,6 +385,7 @@ PRODUCT_PACKAGES += \
     liburee_meta_drmkeyinstall \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     libvia-ril \
+    libviagpsrpc \
     libviamipc-ril \
     libwifi-hal-mtk \
     libwpfa \
