@@ -777,10 +777,10 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
+    ImsService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     EngineerMode \
-    ImsService \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
