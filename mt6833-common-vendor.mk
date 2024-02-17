@@ -593,6 +593,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.mediatek.hardware.nvram@1.1-impl \
+    libHEVCdec_sa.ca7.android \
     libMtkOmxAdpcmDec \
     libMtkOmxApeDec \
     libMtkOmxCore \
@@ -610,16 +611,29 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libcvsd_mtk \
+    libh264dec_customize \
+    libh264dec_sa.ca7 \
+    libh264dec_sd.ca7 \
+    libh264dec_se.ca7 \
+    libh264enc_sa.ca7 \
+    libhevce_sb.ca7.android \
     libmp3dec_mtk \
+    libmp4enc_sa.ca7 \
+    libmp4enc_xa.ca7 \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
     libspeech_enh_lib \
     libthermalalgo \
+    libthha \
+    libvc1dec_sa.ca7 \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libvow_ap_test_ha \
     libvow_ap_test_hh \
     libvow_ap_test_nn \
+    libvp8dec_sa.ca7 \
+    libvp8enc_sa.ca7 \
+    libvp9dec_sa.ca7 \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsServer \
