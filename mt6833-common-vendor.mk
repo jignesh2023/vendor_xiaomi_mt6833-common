@@ -637,7 +637,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsServer \
-    com.fingerprints.extension@1.0 \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     consumerir.common \
