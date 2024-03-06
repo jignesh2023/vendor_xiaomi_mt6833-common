@@ -620,6 +620,7 @@ PRODUCT_PACKAGES += \
     libmp3dec_mtk \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
+    libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
     libspeech_enh_lib \
