@@ -84,48 +84,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.bluetooth.audio@2.2-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vulkan.mali",
 	owner: "xiaomi",
 	strip: {
@@ -338,26 +296,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_mediatek",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -627,26 +565,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libipsec_ims_shr",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libipsec_ims_shr.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libipsec_ims_shr.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libladder",
 	owner: "xiaomi",
 	strip: {
@@ -658,6 +576,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libladder.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtcloader",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libmtcloader.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmtcloader.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -918,46 +856,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvpu5.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1447,26 +1345,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.videotelephony@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.nvram@1.1-impl",
 	owner: "xiaomi",
 	strip: {
@@ -1480,23 +1358,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "32",
 	check_elf_files: false,
 	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libHEVCdec_sa.ca7.android",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1791,108 +1652,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libh264dec_customize",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libh264dec_customize.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libh264dec_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libh264dec_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libh264dec_sd.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libh264dec_sd.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libh264dec_se.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libh264dec_se.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libh264enc_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libh264enc_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libhevce_sb.ca7.android",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhevce_sb.ca7.android.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmp3dec_mtk",
 	owner: "xiaomi",
 	strip: {
@@ -1901,40 +1660,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmp3dec_mtk.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmp4enc_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmp4enc_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmp4enc_xa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmp4enc_xa.ca7.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -2029,40 +1754,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libthha",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthha.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvc1dec_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvc1dec_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvcodec_oal",
 	owner: "xiaomi",
 	strip: {
@@ -2148,57 +1839,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvp8dec_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvp8dec_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvp8enc_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvp8enc_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvp9dec_sa.ca7",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvp9dec_sa.ca7.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.audio@7.1",
 	owner: "xiaomi",
 	strip: {
@@ -2207,23 +1847,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.rcs@2.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -2456,6 +2079,24 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -2780,6 +2421,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarcsoft_low_light_hdr.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libbluetooth_audio_session_mediatek",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4081,23 +3739,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvendor.goodix.hardware.biometrics.fingerprint@2.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvia-ril",
 	owner: "xiaomi",
 	strip: {
@@ -4106,23 +3747,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvia-ril.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libviagpsrpc",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libviagpsrpc.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4244,6 +3868,40 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4397,23 +4055,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.clientapi@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4584,6 +4225,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.videotelephony@1.0",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -5011,6 +4669,15 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+prebuilt_etc {
+	name: "init.vtservice",
+	owner: "xiaomi",
+	src: "proprietary/system_ext/etc/init/init.vtservice.rc",
+	filename_from_src: true,
+	sub_dir: "init",
+	system_ext_specific: true,
+}
+
 cc_prebuilt_binary {
 	name: "bp_kmsetkey_ca",
 	owner: "xiaomi",
@@ -5301,6 +4968,18 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "mi_thermald",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/mi_thermald"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "mnld",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/mnld"],
@@ -5349,9 +5028,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "thermalloadalgod",
+	name: "thermal_manager",
 	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/thermalloadalgod"],
+	srcs: ["proprietary/vendor/bin/thermal_manager"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -5361,9 +5040,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "volte_clientapi_ua",
+	name: "thermalloadalgod",
 	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/volte_clientapi_ua"],
+	srcs: ["proprietary/vendor/bin/thermalloadalgod"],
 	check_elf_files: false,
 	strip: {
 		none: true,
